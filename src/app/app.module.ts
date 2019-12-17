@@ -11,6 +11,7 @@ import { TipologiaConcorsoComponent } from './componenets/tipologia-concorso/tip
 import { MenuSidenavComponent } from './componenets/menu-sidenav/menu-sidenav.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { FaqComponent } from './componenets/faq/faq.component';
+import { ContattiComponent } from './componenets/contatti/contatti.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FaqComponent } from './componenets/faq/faq.component';
     TipologiaConcorsoComponent,
     MenuSidenavComponent,
     FaqComponent,
+    ContattiComponent,
   ],
   imports: [
     BrowserModule,

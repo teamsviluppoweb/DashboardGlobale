@@ -1,0 +1,66 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="true" position="end"
+               [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+               [mode]="(isHandset$ | async) ? 'over' : 'side'"
+               [opened]="(isHandset$ | async)"
+
+  >
+
+    <div class="container">
+
+      <div id="title">
+        <p>ACCEDI AL PORTALE</p>
+
+        <mat-divider></mat-divider>
+
+      </div>
+      <!-- spid -->
+
+      <a href="#" class="italia-it-button italia-it-button-size-l button-spid"
+         aria-haspopup="true" aria-expanded="false">
+        <span class="italia-it-button-icon">
+          <img src="../../../assets/spid/img/spid-ico-circle-bb.png" /></span>
+        <span class="italia-it-button-text">Entra con SPID</span>
+      </a>
+    </div>
+    <!-- Fine spid -->
+
+    <mat-nav-list>
+
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <span>PORTALE VVF</span>
+
+
+      <button mat-button [routerLink]="['']">
+        <mat-icon>home</mat-icon>
+        <a>HOME</a>
+      </button>
+      <button mat-button [routerLink]="['faq']">
+        <mat-icon>info</mat-icon>
+        <a>FAQ</a>
+      </button>
+      <button mat-button [routerLink]="['contatti']">
+        <mat-icon>email</mat-icon>
+        <a>CONTATTI</a>
+      </button>
+      <span class="spacer"></span>
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </mat-toolbar>
+    <div class="flex-body">
+      <router-outlet></router-outlet>
+    </div>
+
+    <app-footer></app-footer>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
