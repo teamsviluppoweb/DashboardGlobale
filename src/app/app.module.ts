@@ -9,6 +9,8 @@ import {MaterialModule} from './shared/modules/material.module';
 import {FooterComponent} from './componenets/footer/footer.component';
 import { TipologiaConcorsoComponent } from './componenets/tipologia-concorso/tipologia-concorso.component';
 import { MenuSidenavComponent } from './componenets/menu-sidenav/menu-sidenav.component';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import { FaqComponent } from './componenets/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import { MenuSidenavComponent } from './componenets/menu-sidenav/menu-sidenav.co
     FooterComponent,
     TipologiaConcorsoComponent,
     MenuSidenavComponent,
+    FaqComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
