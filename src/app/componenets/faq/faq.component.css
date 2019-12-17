@@ -1,3 +1,21 @@
+.faq {
+  font-family: "Titillium Web", HelveticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.content {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+li{
+  list-style-type: none;
+}
+
 header {
   color: white;
   width:100%;
@@ -27,7 +45,7 @@ header {
 
 mat-accordion {
   width: 100%;
-  max-width: 900px;
+  max-width: 1300px;
   min-width: 200px;
   padding: 10px;
 }
